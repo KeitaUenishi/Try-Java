@@ -24,6 +24,8 @@ public class TryJava_1011 {
 
 		System.out.println(afterDay);
 
+		scanner.close();
+
 	}
 
 }

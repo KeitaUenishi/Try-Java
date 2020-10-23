@@ -16,7 +16,7 @@ public class TryJava_1013 {
 			number = scanner.next();
 			System.out.println(number.length());
 		}
-
+		scanner.close();
 	}
 
 }

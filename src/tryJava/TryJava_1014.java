@@ -2,7 +2,7 @@ package tryJava;
 
 import java.util.Scanner;
 
-public class TryJava1014 {
+public class TryJava_1014 {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ

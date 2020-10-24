@@ -38,6 +38,8 @@ public class TryJava1023 {
 			System.out.println(judgment(score));
 		}
 
+		scanner.close();
+
 	}
 
 	public static String judgment(double score) {

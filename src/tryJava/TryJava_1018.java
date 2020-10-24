@@ -28,5 +28,7 @@ public class TryJava_1018 {
 			System.out.println(upper_s);
 		}
 
+		sc.close();
+
 	}
 }

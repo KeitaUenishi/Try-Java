@@ -9,11 +9,10 @@ public class tryJava_1022_1 {
 
 		Scanner scanner = new Scanner(System.in);
 
-		String text1 = scanner.next();
-		String text2 = scanner.nextLine();
+		while (scanner.hasNext()) {
 
-		System.out.println(text1);
-		System.out.println(text2);
+			System.out.println(scanner.next());
+		}
 
 		scanner.close();
 

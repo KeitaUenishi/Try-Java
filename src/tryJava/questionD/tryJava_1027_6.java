@@ -14,5 +14,4 @@ public class tryJava_1027_6 {
 
 		scanner.close();
 	}
-
 }

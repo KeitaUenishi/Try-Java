@@ -2,15 +2,13 @@ package tryJava.questionD;
 
 import java.util.Scanner;
 
-public class tryJava_1027_5 {
+public class tryJava_1028_1 {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
-
-		//文字列sの長さを出力
+		// 入力されるアルファベット小文字を大文字にして出力
 
 		Scanner scanner = new Scanner(System.in);
-		System.out.println(scanner.next().length());
+		System.out.println(scanner.next().toUpperCase());
 
 		scanner.close();
 	}

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class tryJava_1026_4 {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+		// 入力された文字列を1文字ずつ改行して表示
 
 		Scanner scanner = new Scanner(System.in);
 		String line = scanner.next();
@@ -15,5 +15,4 @@ public class tryJava_1026_4 {
 		}
 		scanner.close();
 	}
-
 }

@@ -1,4 +1,4 @@
-package tryJava1102;
+package tryJavaNovember;
 
 import java.util.Scanner;
 

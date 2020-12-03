@@ -23,11 +23,12 @@ public class TryJava1127_1 {
 
 		for (int i = 0; i < 5; i++) {
 			board[i] = scanner.next().split("");
-			//横の判定
-			String diaSide = judgement(diagSide(board));
-			if (!diaSide.equals("D")) {
-				result = diaSide;
-			}
+		}
+
+		//横の判定
+		String diagSide = judgement(diagSide(board));
+		if (!diagSide.equals("D")) {
+			result = diagSide;
 		}
 
 		// ／の判定
@@ -43,9 +44,9 @@ public class TryJava1127_1 {
 		}
 
 		// 縦の判定
-		String diaVer = judgement(diagVer(board));
-		if (!diaVer.equals("D")) {
-			result = diaVer;
+		String diagVer = judgement(diagVer(board));
+		if (!diagVer.equals("D")) {
+			result = diagVer;
 		}
 
 		System.out.println(result);
@@ -60,6 +61,7 @@ public class TryJava1127_1 {
 			line += board[i][-(i - 4)];
 			//System.out.println(board[i][-1 * (i - 4)]);
 		}
+		//		System.out.println("／方向" + line);
 		return line;
 	}
 
@@ -70,6 +72,7 @@ public class TryJava1127_1 {
 		for (int i = 0; i < 5; i++) {
 			line += board[i][i];
 		}
+		//		System.out.println("＼方向" + line);
 		return line;
 	}
 
@@ -81,21 +84,29 @@ public class TryJava1127_1 {
 				line += board[j][i];
 			}
 		}
+		//		System.out.println("縦" + line);
+
 		return line;
 	}
 
 	// 横方向の並びをStringで返すメソッド
 	static String diagSide(String[][] board) {
 		String line = "";
-		line += board;
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				line += board[i][j];
+			}
+		}
+		//		System.out.println(Arrays.deepToString(board));
+		//		System.out.println(line);
 		return line;
 	}
 
 	// 引数に与えられた並びの勝者を"O", "X", "D" で返すメソッド
 	static String judgement(String line) {
-		if (line.equals("OOOOO")) {
+		if (line.contains("OOOOO")) {
 			return "O";
-		} else if (line.equals("XXXXX")) {
+		} else if (line.contains("XXXXX")) {
 			return "X";
 		}
 		return "D";

@@ -7,7 +7,7 @@ public class TryJava1127_1 {
 	public static void main(String[] args) {
 
 		/**
-		 * 11/27 解けず 後日再挑戦
+		 * 11/27 解けず 後日再挑戦 12/3解決
 		 *
 		 * 5行5列の五目並べの盤面が与えられます。
 		 * 盤面の各マスには、"O"か"X"か"."が書かれています。

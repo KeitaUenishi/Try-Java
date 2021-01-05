@@ -14,6 +14,7 @@ public class Oraoraora {
 		Scanner scanner = new Scanner(System.in);
 		Random random = new Random();
 		int level = 0;
+		
 		System.out.println("難易度を1～10で選択");
 		try {
 			level = scanner.nextInt();
